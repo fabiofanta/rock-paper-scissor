@@ -31,15 +31,35 @@ body {
   
   .result-score {
     margin-left: .1rem;
-    font-size: .5rem;
+    font-size: 1rem;
     color: #333;
   }
   
   .result-selection {
     opacity: .5;
+    font-size: 1.5rem;
   }
   
   .result-selection.winner {
     opacity: 1;
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .result-selection.winner::after {
+    content: 'Win';
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.1rem;
+  }
+
+  .results div:nth-child(3), .results div:nth-child(4) {
+    margin-bottom: 4rem;
+  }
+
+  h4 {
+      margin: auto 0;
+  }
+
+  .computer {
+      margin-left: 2rem;
   }
